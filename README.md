@@ -1,4 +1,4 @@
-<img src="image/image_logo.jpg" alt="Imagen Formación y Academia" width="100%">
+![Imagen Formación y Academia](img/logo.jpg)
 
 <strong>Calendario de Clases — Python</strong><br>
 Duración total: 150 horas · 6 semanas (30 días lectivos)<br>
