@@ -1,0 +1,7 @@
+Se necesita un lenguaje base para la web, que en este caso sería HTML, CSS y JavaScript. HTML sirve para estructurar la página (textos, imágenes, botones), CSS para darle diseño (colores, estilos, disposición), y JavaScript para añadir interactividad (por ejemplo, formularios dinámicos o botones que reaccionan).
+
+Después, como quiere usar Python, lo recomendable es utilizar un framework web como Flask. Framework que es muy sencillo, y permite crear páginas web de forma rápida.
+
+También necesitará una base de datos para guardar información como citas o servicios de la peluquería. Puede usar SQLite (muy fácil para proyectos pequeños).
+
+Además, herramientas básicas de desarrollo como Visual Studio Code que nos facilita un entorno virtual de Python (venv) para organizar dependencias y pip para instalar librerías (pip install flask, por ejemplo), por el terminal del propio IDE.

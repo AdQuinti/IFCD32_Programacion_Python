@@ -1,0 +1,157 @@
+/* -------------------------
+   ESTILO GENERAL
+------------------------- */
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f8fc;
+    margin: 0;
+    padding: 0;
+}
+
+/* -------------------------
+   CABECERA
+------------------------- */
+
+header {
+    background-color: #0d6efd;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+}
+
+/* -------------------------
+   MENÚ
+------------------------- */
+
+nav {
+    background-color: #084298;
+    padding: 15px;
+    text-align: center;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 15px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: orange;
+}
+
+/* -------------------------
+   CONTENIDO
+------------------------- */
+
+.contenedor {
+    width: 80%;
+    margin: auto;
+    margin-top: 30px;
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.2);
+}
+
+/* -------------------------
+   FORMULARIOS
+------------------------- */
+
+input {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 20px;
+
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* -------------------------
+   BOTONES
+------------------------- */
+
+button {
+
+    background-color: orange;
+    color: white;
+
+    border: none;
+    padding: 12px 20px;
+
+    border-radius: 5px;
+
+    font-size: 16px;
+    cursor: pointer;
+
+    animation: parpadeo 1s infinite;
+}
+
+button:hover {
+    background-color: darkorange;
+}
+
+/* Animación */
+
+@keyframes parpadeo {
+
+    0% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0.6;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+/* -------------------------
+   TABLA
+------------------------- */
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table th {
+    background-color: #0d6efd;
+    color: white;
+    padding: 12px;
+}
+
+table td {
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+}
+
+table tr:hover {
+    background-color: #f2f2f2;
+}
+
+/* -------------------------
+   LINKS
+------------------------- */
+
+a {
+    text-decoration: none;
+}
+
+/* -------------------------
+   IMAGENES
+------------------------- */
+
+img {
+    width: 75%;
+}

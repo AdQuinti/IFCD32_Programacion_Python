@@ -1,0 +1,50 @@
+<!doctype html>
+<html>
+  <head>
+    <title>PANEL DE CLIENTES</title>
+
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='css/estilo.css') }}"
+    />
+  </head>
+
+  <body>
+    <header>
+      <h1>PANEL DE CONTROL DE CLIENTES</h1>
+    </header>
+
+    <nav>
+      <a href="/">Inicio</a>
+      <a href="/agregar">Agregar</a>
+      <a href="/buscar">Buscar</a>
+      <a href="/lista">Lista</a>
+    </nav>
+
+    <div class="contenedor">
+      <h2>Buscar Cliente</h2>
+
+      <form method="POST">
+        <label>DNI</label>
+
+        <input type="text" name="dni" />
+
+        <button type="submit">Buscar</button>
+      </form>
+
+      {% if cliente %}
+
+      <hr />
+
+      <h3>Cliente encontrado</h3>
+
+      <p><b>ID:</b> {{ cliente[0] }}</p>
+      <p><b>DNI:</b> {{ cliente[1] }}</p>
+      <p><b>Nombre:</b> {{ cliente[2] }}</p>
+      <p><b>Teléfono:</b> {{ cliente[3] }}</p>
+      <p><b>Dirección:</b> {{ cliente[4] }}</p>
+
+      {% endif %}
+    </div>
+  </body>
+</html>

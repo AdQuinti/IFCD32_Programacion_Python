@@ -1,0 +1,7 @@
+Para este proyecto de gestión de citas médicas, una opción muy buena sería utilizar SQLite, ya que se trata de una base de datos relacional ligera, sencilla de implementar y perfectamente integrada con Python.
+
+SQLite destaca principalmente porque no necesita un servidor independiente para funcionar, sino que toda la base de datos se almacena en un único archivo. Esto facilita mucho el desarrollo inicial de la aplicación, reduce la complejidad técnica y permite a un programador junior trabajar de forma más rápida y segura sin necesidad de configurar sistemas externos como ocurre con MySQL o PostgreSQL.
+
+También, SQLite es ideal porque permite estructurar correctamente los datos en tablas relacionadas (pacientes, médicos, citas, especialidades) sin renunciar a las ventajas de una base de datos relacional, como la integridad de los datos y las relaciones entre tablas.
+
+SQLite es una buena elección porque combina simplicidad, rapidez de desarrollo y soporte relacional, lo que la convierte en una solución muy adecuada para construir una primera versión funcional del sistema de citas médicas antes de plantear una migración a una base de datos más robusta si el proyecto crece.

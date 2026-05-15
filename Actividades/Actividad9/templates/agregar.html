@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>PANEL DE CLIENTES</title>
+
+    <link rel="stylesheet"
+    href="{{ url_for('static', filename='css/estilo.css') }}">
+</head>
+
+<body>
+
+    <header>
+        <h1>PANEL DE CONTROL DE CLIENTES</h1>
+    </header>
+
+    <nav>
+        <a href="/">Inicio</a>
+        <a href="/agregar">Agregar</a>
+        <a href="/buscar">Buscar</a>
+        <a href="/lista">Lista</a>
+    </nav>
+
+    <div class="contenedor">
+
+        <h2>Agregar cliente</h2>
+
+        <form method="POST">
+
+            <label>DNI</label>
+            <input type="text" name="dni">
+
+            <label>Nombre</label>
+            <input type="text" name="nombre">
+
+            <label>Teléfono</label>
+            <input type="text" name="telefono">
+
+            <label>Dirección</label>
+            <input type="text" name="direccion">
+
+            <button type="submit">
+                Guardar Cliente
+            </button>
+
+        </form>
+
+    </div>
+
+</body>
+</html>

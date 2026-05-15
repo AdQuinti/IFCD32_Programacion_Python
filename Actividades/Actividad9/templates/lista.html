@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>PANEL DE CLIENTES</title>
+
+    <link rel="stylesheet"
+    href="{{ url_for('static', filename='css/estilo.css') }}">
+</head>
+
+<body>
+
+    <header>
+         <h1>PANEL DE CONTROL DE CLIENTES</h1>
+    </header>
+
+    <nav>
+        <a href="/">Inicio</a>
+        <a href="/agregar">Agregar</a>
+        <a href="/buscar">Buscar</a>
+        <a href="/lista">Lista</a>
+    </nav>
+
+    <div class="contenedor">
+
+        <h2>Lista de Clientes</h2>
+
+        <table>
+
+            <tr>
+                <th>ID</th>
+                <th>DNI</th>
+                <th>Nombre</th>
+                <th>Teléfono</th>
+                <th>Dirección</th>
+                <th>Acción</th>
+            </tr>
+
+            {% for cliente in clientes %}
+
+            <tr>
+
+                <td>{{ cliente[0] }}</td>
+                <td>{{ cliente[1] }}</td>
+                <td>{{ cliente[2] }}</td>
+                <td>{{ cliente[3] }}</td>
+                <td>{{ cliente[4] }}</td>
+
+                <td>
+                    <a href="/borrar/{{ cliente[0] }}">
+                        Borrar
+                    </a>
+                </td>
+
+            </tr>
+
+            {% endfor %}
+
+        </table>
+
+    </div>
+
+</body>
+</html>

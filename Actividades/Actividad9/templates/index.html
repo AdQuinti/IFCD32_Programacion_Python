@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>PANEL DE CLIENTES</title>
+
+    <link rel="stylesheet"
+    href="{{ url_for('static', filename='css/estilo.css') }}">
+</head>
+
+<body>
+
+    <header>
+        <h1>PANEL DE CONTROL DE CLIENTES</h1>
+    </header>
+
+    <nav>
+        <a href="/">Inicio</a>
+        <a href="/agregar">Agregar</a>
+        <a href="/buscar">Buscar</a>
+        <a href="/lista">Lista</a>
+    </nav>
+
+    <div class="contenedor">
+
+        <h2> Bienvenido</h2>
+
+        <p>
+            Sistema para gestionar clientes
+        </p>
+        <figure>
+            <!-- Se pone este código porque estamos utilizando FLASK-->
+            <img src="{{ url_for('static', filename='img/panelCliente.png') }}" alt="Imagen Panel de Control">
+        </figure>
+
+    </div>
+
+</body>
+</html>
