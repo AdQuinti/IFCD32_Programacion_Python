@@ -192,10 +192,8 @@ Horario de clases en directo: 16:00–18:30<br>
 </div>
 <br><br>
 <hr>
-<br><br>
 <strong>Trabajo en plataforma</strong><br>
 Sesiones de teleformación online realizadas los miércoles, en horario 16:00–21:00.<br>
-
 <hr>
 
 <ul>
