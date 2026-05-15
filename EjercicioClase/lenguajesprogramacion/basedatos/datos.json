@@ -1,0 +1,144 @@
+{
+  "web": {
+    "nombre": "Lenguajes de Programacion",
+    "fecha_creacion": "14/05/2026",
+    "descripcion": "Web local creada con Flask para mostrar la historia de los lenguajes de programacion mas conocidos."
+  },
+  "lenguajes": [
+    {
+      "slug": "python",
+      "nombre": "Python",
+      "anio": 1991,
+      "creador": "Guido van Rossum",
+      "tipo": "Multiparadigma",
+      "resumen": "Python es un lenguaje muy usado en educacion, inteligencia artificial, ciencia de datos y desarrollo web.",
+      "historia": "Python fue creado con la idea de ser legible, claro y facil de aprender. Se ha convertido en uno de los lenguajes mas populares del mundo."
+    },
+    {
+      "slug": "java",
+      "nombre": "Java",
+      "anio": 1995,
+      "creador": "James Gosling",
+      "tipo": "Orientado a objetos",
+      "resumen": "Java es muy usado en aplicaciones empresariales, Android y sistemas grandes.",
+      "historia": "Java nacio con la idea de poder ejecutarse en diferentes sistemas gracias a la maquina virtual JVM."
+    },
+    {
+      "slug": "c",
+      "nombre": "C",
+      "anio": 1972,
+      "creador": "Dennis Ritchie",
+      "tipo": "Procedimental",
+      "resumen": "C es una base historica para muchos otros lenguajes y se usa mucho en sistemas operativos y programas de bajo nivel.",
+      "historia": "C fue creado en los laboratorios Bell y tuvo un gran impacto en la historia de la programacion moderna."
+    },
+    {
+      "slug": "cpp",
+      "nombre": "C++",
+      "anio": 1985,
+      "creador": "Bjarne Stroustrup",
+      "tipo": "Multiparadigma",
+      "resumen": "C++ es muy potente y se usa en videojuegos, motores graficos y software de alto rendimiento.",
+      "historia": "C++ amplio el lenguaje C añadiendo programacion orientada a objetos y muchas otras capacidades."
+    },
+    {
+      "slug": "javascript",
+      "nombre": "JavaScript",
+      "anio": 1995,
+      "creador": "Brendan Eich",
+      "tipo": "Multiparadigma",
+      "resumen": "JavaScript domina el desarrollo web del lado del cliente y tambien del servidor con Node.js.",
+      "historia": "JavaScript nacio para dar interactividad a las paginas web y hoy es uno de los lenguajes mas usados."
+    },
+    {
+      "slug": "php",
+      "nombre": "PHP",
+      "anio": 1995,
+      "creador": "Rasmus Lerdorf",
+      "tipo": "Script del lado del servidor",
+      "resumen": "PHP se usa mucho para crear webs dinamicas y sigue presente en muchos sitios y gestores de contenido.",
+      "historia": "PHP empezo como una herramienta sencilla para paginas personales y crecio hasta convertirse en lenguaje web muy extendido."
+    },
+    {
+      "slug": "csharp",
+      "nombre": "C#",
+      "anio": 2000,
+      "creador": "Microsoft",
+      "tipo": "Orientado a objetos",
+      "resumen": "C# es popular en desarrollo de escritorio, web, videojuegos con Unity y aplicaciones empresariales.",
+      "historia": "C# fue creado por Microsoft para la plataforma .NET y con el tiempo se ha vuelto muy versatil."
+    },
+    {
+      "slug": "ruby",
+      "nombre": "Ruby",
+      "anio": 1995,
+      "creador": "Yukihiro Matsumoto",
+      "tipo": "Multiparadigma",
+      "resumen": "Ruby es conocido por su sintaxis elegante y por el framework Ruby on Rails.",
+      "historia": "Ruby se diseño buscando productividad y placer al programar, con una sintaxis muy natural."
+    },
+    {
+      "slug": "swift",
+      "nombre": "Swift",
+      "anio": 2014,
+      "creador": "Apple",
+      "tipo": "Multiparadigma",
+      "resumen": "Swift se usa principalmente para desarrollar aplicaciones en el ecosistema Apple.",
+      "historia": "Swift surgio como reemplazo moderno de Objective-C, con un enfoque mas seguro y legible."
+    },
+    {
+      "slug": "kotlin",
+      "nombre": "Kotlin",
+      "anio": 2011,
+      "creador": "JetBrains",
+      "tipo": "Multiparadigma",
+      "resumen": "Kotlin es muy usado en Android y desarrollo backend moderno.",
+      "historia": "Kotlin fue creciendo por su sintaxis clara y por su integracion con Java."
+    },
+    {
+      "slug": "go",
+      "nombre": "Go",
+      "anio": 2009,
+      "creador": "Google",
+      "tipo": "Compilado",
+      "resumen": "Go destaca por su sencillez, velocidad y uso en servidores, redes y cloud.",
+      "historia": "Go fue creado para simplificar el desarrollo de sistemas grandes y concurrentes."
+    },
+    {
+      "slug": "rust",
+      "nombre": "Rust",
+      "anio": 2010,
+      "creador": "Graydon Hoare",
+      "tipo": "Compilado",
+      "resumen": "Rust es conocido por su seguridad en memoria y por su alto rendimiento.",
+      "historia": "Rust aparecio para ofrecer rendimiento similar a C o C++, pero con mas seguridad."
+    },
+    {
+      "slug": "typescript",
+      "nombre": "TypeScript",
+      "anio": 2012,
+      "creador": "Microsoft",
+      "tipo": "Superset de JavaScript",
+      "resumen": "TypeScript añade tipado a JavaScript y es muy usado en proyectos grandes.",
+      "historia": "TypeScript fue creado para mejorar el mantenimiento y la escalabilidad del codigo JavaScript."
+    },
+    {
+      "slug": "r",
+      "nombre": "R",
+      "anio": 1993,
+      "creador": "Ross Ihaka y Robert Gentleman",
+      "tipo": "Estadistico",
+      "resumen": "R es muy usado en estadistica, analisis de datos y visualizacion.",
+      "historia": "R se convirtio en una herramienta clave dentro del analisis estadistico y academico."
+    },
+    {
+      "slug": "pascal",
+      "nombre": "Pascal",
+      "anio": 1970,
+      "creador": "Niklaus Wirth",
+      "tipo": "Procedimental",
+      "resumen": "Pascal fue muy importante en la enseñanza de la programacion y en el desarrollo estructurado.",
+      "historia": "Pascal fue diseñado con fines educativos y tuvo mucho peso en la formacion de programadores."
+    }
+  ]
+}

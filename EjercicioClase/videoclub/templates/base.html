@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+
+    <!--
+        EL TÍTULO SE RELLENA DESDE OTRA PLANTILLA
+        MEDIANTE JINJA2
+    -->
+    <title>
+        {% block title %}
+        {% endblock %}
+    </title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+
+    <header>
+        <h1>🎬 VIDEOCLUB ONLINE</h1>
+    </header>
+
+    <main>
+
+        <!--
+            AQUÍ SE INSERTA EL CONTENIDO
+            DE LAS OTRAS PLANTILLAS
+        -->
+        {% block contenido %}
+        {% endblock %}
+
+    </main>
+
+</body>
+</html>

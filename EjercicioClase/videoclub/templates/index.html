@@ -1,0 +1,64 @@
+<!--
+    HEREDAMOS DE base.html
+-->
+{% extends "base.html" %}
+
+<!--
+    BLOQUE DEL TITLE
+-->
+{% block title %}
+{{ titulo }}
+{% endblock %}
+
+<!--
+    BLOQUE PRINCIPAL
+-->
+{% block contenido %}
+
+<h2>Listado de películas</h2>
+
+<div class="contenedor">
+
+    <!--
+        RECORREMOS LAS PELÍCULAS DEL JSON
+    -->
+    {% for pelicula in peliculas %}
+
+    <div class="tarjeta">
+
+        <!-- CARTEL -->
+        <img src="{{ pelicula.imagen }}" alt="cartel">
+
+        <!-- TÍTULO -->
+        <h3>{{ pelicula.titulo }}</h3>
+
+        <!-- DIRECTOR -->
+        <p>
+            <strong>Director:</strong>
+            {{ pelicula.director }}
+        </p>
+
+        <!-- ACTORES -->
+        <p>
+            <strong>Actores:</strong>
+            {{ pelicula.actores }}
+        </p>
+
+        <!-- AÑO -->
+        <p>
+            <strong>Año:</strong>
+            {{ pelicula.estreno }}
+        </p>
+
+        <!-- DESCRIPCIÓN -->
+        <p>
+            {{ pelicula.descripcion }}
+        </p>
+
+    </div>
+
+    {% endfor %}
+
+</div>
+
+{% endblock %}

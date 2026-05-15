@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+
+{% block contenido %}
+<section>
+    <article>
+        <h2>Error 404</h2>
+
+        <!-- Mensaje principal de error -->
+        <p>La pagina que buscas no existe.</p>
+
+        <!-- Texto adicional para orientar al usuario -->
+        <p>Comprueba la direccion escrita o vuelve a la pagina principal.</p>
+
+        <!-- Enlace para regresar al inicio -->
+        <p>
+            <a href="{{ url_for('lenguajes_programacion') }}">Volver al inicio</a>
+        </p>
+    </article>
+</section>
+{% endblock %}

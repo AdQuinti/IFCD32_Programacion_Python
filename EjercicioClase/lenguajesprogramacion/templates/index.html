@@ -1,0 +1,61 @@
+{% extends "base.html" %}
+
+{% block contenido %}
+<section>
+    <h2>Historia de los lenguajes de programacion</h2>
+    <p>Selecciona un lenguaje en la lista para ver su informacion.</p>
+
+    <!--
+        Formulario con método GET.
+        Al pulsar el botón, la opción seleccionada viaja en la URL.
+        Ejemplo:
+        /lenguajesprogramacion?lenguaje=python
+    -->
+    <form action="{{ url_for('lenguajes_programacion') }}" method="get">
+
+        <!-- Etiqueta descriptiva del select -->
+        <label>Lenguaje</label>
+
+        <!--
+            Select que muestra solo el nombre de cada lenguaje.
+            El value guarda el slug, que es lo que Flask usará para buscarlo.
+        -->
+        <select name="lenguaje">
+
+            <!--
+                Opción vacía.
+                Si el usuario la elige, no se mostrará ningún lenguaje abajo.
+            -->
+            <option value="">Selecciona un lenguaje</option>
+
+            <!-- Recorremos todos los lenguajes del JSON -->
+            {% for lenguaje in lenguajes %}
+                <option value="{{ lenguaje.slug }}" {% if slug_actual == lenguaje.slug %}selected{% endif %}>
+                    {{ lenguaje.nombre }}
+                </option>
+            {% endfor %}
+        </select>
+
+        <!-- Botón para enviar el formulario -->
+        <button type="submit">Ver informacion</button>
+    </form>
+</section>
+
+<!--
+    Solo mostramos esta sección si existe un lenguaje seleccionado.
+    Si se ha elegido la opción vacía, no aparece nada.
+-->
+{% if lenguaje_seleccionado %}
+<section>
+    <article>
+        <h3>{{ lenguaje_seleccionado.nombre }}</h3>
+
+        <p><strong>Año:</strong> {{ lenguaje_seleccionado.anio }}</p>
+        <p><strong>Creador:</strong> {{ lenguaje_seleccionado.creador }}</p>
+        <p><strong>Tipo:</strong> {{ lenguaje_seleccionado.tipo }}</p>
+        <p><strong>Resumen:</strong> {{ lenguaje_seleccionado.resumen }}</p>
+        <p><strong>Historia:</strong> {{ lenguaje_seleccionado.historia }}</p>
+    </article>
+</section>
+{% endif %}
+{% endblock %}

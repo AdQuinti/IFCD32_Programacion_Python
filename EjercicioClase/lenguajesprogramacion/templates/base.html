@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{{ web.nombre }}</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/estilo.css') }}">
+</head>
+<body>
+    <header>
+        <h1>{{ web.nombre }}</h1>
+        <p>Fecha de creacion: {{ web.fecha_creacion }}</p>
+        <p>{{ web.descripcion }}</p>
+        <nav>
+            <a href="{{ url_for('lenguajes_programacion') }}">Inicio</a>
+        </nav>
+    </header>
+
+    <main>
+        {% block contenido %}{% endblock %}
+    </main>
+
+    <footer>
+        <p>Proyecto local con Flask sobre historia de los lenguajes de programacion.</p>
+    </footer>
+</body>
+</html>
