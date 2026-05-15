@@ -1,4 +1,6 @@
-<img src="img/logo.jpg" alt="Imagen Formación y Academia" width="100%">
+<p align="center">
+  <img src="img/image_logo.jpg" alt="Logo del curso IFCD32 Programación en Python" width="900">
+</p>
 
 <strong>Calendario de Clases — Python</strong><br>
 Duración total: 150 horas · 6 semanas (30 días lectivos)<br>
