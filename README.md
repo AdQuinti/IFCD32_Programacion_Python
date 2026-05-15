@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="img/image_logo.jpg" alt="Logo del curso IFCD32 Programación en Python" width="900">
+  <img src="img/image_logo.jpg" alt="Logo del curso IFCD32 Programación en Python" width="250">
 </p>
 
 <strong>Calendario de Clases — Python</strong><br>
