@@ -1,4 +1,4 @@
-Calendario de Clases — Python
+Calendario de Clases — Python<br>
 Duración total: 150 horas · 6 semanas (30 días lectivos)
 Horario de clases en directo: 16:00–18:30
 Semana 1 — 06/04 al 10/04/2026
